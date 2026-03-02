@@ -62,7 +62,7 @@ The chatbot answers questions strictly based on the uploaded PDF content.
 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/RAG-chatbot.git
+git clone https://github.com/mohaktalodhikar/RAG_ChatBot.git
 cd RAG-chatbot
 ```
 
@@ -78,3 +78,4 @@ or manually:
 pip install langchain langchain-community langchain-huggingface \
 faiss-cpu transformers sentence-transformers pypdf
 ```
+
