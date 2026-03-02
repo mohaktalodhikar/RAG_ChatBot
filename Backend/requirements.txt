@@ -1,0 +1,11 @@
+fastapi
+pydantic
+langchain-community
+langchain
+langchain-core
+langchain-huggingface
+faiss-cpu
+transformers
+sentence-transformers
+torch
+pypdf
