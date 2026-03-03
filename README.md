@@ -86,7 +86,7 @@ cd Backend
 uvicorn app:app --reload
 ```
 Backend will run at:
-http://127.0.0.1:8000
+http://127.0.0.1:8000/docs
 
 4. Run Frontend
 
@@ -98,4 +98,5 @@ python -m http.server 3000
 After starting the frontend server, open:
 
 http://localhost:3000
+
 
