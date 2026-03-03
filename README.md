@@ -59,14 +59,14 @@ The chatbot answers questions strictly based on the uploaded PDF content.
 
 ## **⚙️ Installation**     
 
-1️⃣ Clone Repository
+1️. Clone Repository
 
 ```bash
 git clone https://github.com/mohaktalodhikar/RAG_ChatBot.git
 cd RAG-chatbot
 ```
 
-2️⃣ Install Dependencies
+2️. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -78,4 +78,24 @@ or manually:
 pip install langchain langchain-community langchain-huggingface \
 faiss-cpu transformers sentence-transformers pypdf
 ```
+
+3. Run Backend
+
+```bash
+cd Backend
+uvicorn app:app --reload
+```
+Backend will run at:
+http://127.0.0.1:8000
+
+4. Run Frontend
+
+Start the frontend server:
+```bash
+cd frontend
+python -m http.server 3000
+```
+After starting the frontend server, open:
+
+http://localhost:3000
 
