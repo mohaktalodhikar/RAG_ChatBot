@@ -1,8 +1,8 @@
-📘 RAG Chatbot using FAISS & HuggingFace
+# **📘 RAG Chatbot using FAISS & HuggingFace**
 
 An end-to-end Retrieval-Augmented Generation (RAG) chatbot that processes PDF documents and generates context-aware answers using semantic search and a local HuggingFace LLM.
 
-👨‍💻 About the Project
+## 👨‍💻 About the Project
 
 This project demonstrates a complete implementation of a RAG pipeline, integrating:
 
@@ -16,7 +16,7 @@ This project demonstrates a complete implementation of a RAG pipeline, integrati
 
 The chatbot answers user queries strictly based on the uploaded PDF content, reducing hallucination and improving factual accuracy.
 
-🚀 Key Features
+## 🚀 Key Features
 
 📄 PDF document ingestion
 
@@ -34,7 +34,7 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 
 💻 Simple frontend interface
 
-🧠 System Architecture
+## 🧠 System Architecture
 
 >User Query
 
@@ -48,7 +48,7 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 
 >Final Generated Answer
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 >Python
 
@@ -62,18 +62,19 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 
 >HuggingFace Transformers
 
-🤖 Models Used
+## 🤖 Models Used
+
 🔹 Embedding Model
 
-sentence-transformers/all-MiniLM-L6-v2
+>sentence-transformers/all-MiniLM-L6-v2
 
-Used for semantic vector representation of text chunks
+>Used for semantic vector representation of text chunks
 
 🔹 Vector Database
 
-FAISS
+>FAISS
 
-Used for similarity search over embeddings
+>Used for similarity search over embeddings
 
 🔹 LLM
 
@@ -95,7 +96,7 @@ Suitable for CPU-based inference
 
 Good instruction-following capability
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 1️⃣ Clone Repository
 
@@ -138,7 +139,7 @@ Open in browser:
 
 http://localhost:3000
 
-📌 Learning Outcomes
+## 📌 Learning Outcomes
 
 >Through this project, I gained hands-on experience in:
 
@@ -151,6 +152,7 @@ http://localhost:3000
 >Integrating HuggingFace LLMs
 
 >Backend API development with FastAPI
+
 
 
 
