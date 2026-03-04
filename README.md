@@ -1,102 +1,158 @@
-# 📘 RAG Chatbot using FAISS & HuggingFace
+📘 RAG Chatbot using FAISS & HuggingFace
 
-An end-to-end Retrieval-Augmented Generation (RAG) chatbot that processes PDF documents and answers user questions using semantic search and a local LLM.
+An end-to-end Retrieval-Augmented Generation (RAG) chatbot that processes PDF documents and generates context-aware answers using semantic search and a local HuggingFace LLM.
 
-## **👨‍💻 About This Project**
+.
 
-This project was built as part of my hands-on learning in Retrieval-Augmented Generation (RAG) systems. It demonstrates my understanding of vector databases, embeddings, and LLM integration.
+👨‍💻 About the Project
 
-## **🚀 Project Overview**
+This project demonstrates a complete implementation of a RAG pipeline, integrating:
 
-This project implements a complete RAG pipeline:
+>Document processing
 
-📄 Load and extract text from PDF
+>Vector embeddings
 
-✂ Split text into smaller chunks
+>Similarity search
 
-🔢 Convert text into vector embeddings
+>Large Language Model (LLM) inference
 
-🗄 Store vectors in FAISS vector database
+The chatbot answers user queries strictly based on the uploaded PDF content, reducing hallucination and improving factual accuracy.
 
-🔎 Retrieve relevant chunks using similarity search
+🚀 Key Features
 
-🤖 Generate contextual answers using a HuggingFace LLM
+📄 PDF document ingestion
 
-The chatbot answers questions strictly based on the uploaded PDF content.
+✂ Intelligent text chunking
 
+🔢 Vector embedding generation
 
-## **🧠 Architecture**
+🗄 FAISS vector storage
+
+🔎 Top-k similarity retrieval
+
+🤖 Context-aware answer generation
+
+🌐 FastAPI backend
+
+💻 Simple frontend interface
+
+🧠 System Architecture
 
 >User Query
-     
+
 >Retriever (FAISS Similarity Search)
-     
->Top-k Relevant Chunks
-     
+
+>Top-K Relevant Chunks
+
 >Prompt Template (Context + Question)
-     
+
 >HuggingFace LLM (FLAN-T5)
-     
->Final Answer
 
+>Final Generated Answer
 
-## **🛠 Tech Stack**
+🛠 Tech Stack
 
 >Python
 
+>FastAPI
+
 >LangChain
 
->FAISS (Vector Store)
+>FAISS (Vector Database)
 
->Sentence Transformers (Embeddings)
+>Sentence Transformers
 
 >HuggingFace Transformers
 
->FLAN-T5 (Small/Base)
+🤖 Models Used
+🔹 Embedding Model
 
->FastAPI
+sentence-transformers/all-MiniLM-L6-v2
 
+Used for semantic vector representation of text chunks
 
-## **⚙️ Installation**     
+🔹 Vector Database
 
-1️. Clone Repository
+FAISS
+
+Used for similarity search over embeddings
+
+🔹 LLM
+
+google/flan-t5-small
+
+Framework: HuggingFace Transformers
+
+Pipeline Type: text2text-generation
+
+Max New Tokens: 512
+
+Integrated using HuggingFacePipeline
+
+🔹 Why FLAN-T5?
+
+Lightweight and efficient
+
+Suitable for CPU-based inference
+
+Good instruction-following capability
+
+⚙️ Installation & Setup
+
+1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/mohaktalodhikar/RAG_ChatBot.git
 cd RAG-chatbot
 ```
 
-2️. Install Dependencies
+2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-
-or manually:
+Or manually:
 
 ```bash
 pip install langchain langchain-community langchain-huggingface \
-faiss-cpu transformers sentence-transformers pypdf
+faiss-cpu transformers sentence-transformers pypdf fastapi uvicorn
 ```
 
-3. Run Backend
+3️⃣ Run Backend (FastAPI)
 
 ```bash
 cd Backend
 uvicorn app:app --reload
 ```
-Backend will run at:
+
+Backend runs at:
+
 http://127.0.0.1:8000/docs
 
-4. Run Frontend
+4️⃣ Run Frontend
 
-Start the frontend server:
 ```bash
 cd frontend
 python -m http.server 3000
 ```
-After starting the frontend server, open:
+
+Open in browser:
 
 http://localhost:3000
+
+📌 Learning Outcomes
+
+>Through this project, I gained hands-on experience in:
+
+>Building end-to-end RAG pipelines
+
+>Vector similarity search
+
+>Prompt engineering with retrieved context
+
+>Integrating HuggingFace LLMs
+
+>Backend API development with FastAPI
+
 
 
