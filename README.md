@@ -78,23 +78,23 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 
 🔹 LLM
 
-google/flan-t5-small
+>google/flan-t5-small
 
-Framework: HuggingFace Transformers
+>Framework: HuggingFace Transformers
 
-Pipeline Type: text2text-generation
+>Pipeline Type: text2text-generation
 
-Max New Tokens: 512
+>Max New Tokens: 512
 
-Integrated using HuggingFacePipeline
+>Integrated using HuggingFacePipeline
 
 🔹 Why FLAN-T5?
 
-Lightweight and efficient
+>Lightweight and efficient
 
-Suitable for CPU-based inference
+>Suitable for CPU-based inference
 
-Good instruction-following capability
+>Good instruction-following capability
 
 ## ⚙️ Installation & Setup
 
@@ -152,6 +152,8 @@ http://localhost:3000
 >Integrating HuggingFace LLMs
 
 >Backend API development with FastAPI
+
+
 
 
 
