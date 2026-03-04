@@ -2,8 +2,6 @@
 
 An end-to-end Retrieval-Augmented Generation (RAG) chatbot that processes PDF documents and generates context-aware answers using semantic search and a local HuggingFace LLM.
 
-.
-
 👨‍💻 About the Project
 
 This project demonstrates a complete implementation of a RAG pipeline, integrating:
