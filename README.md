@@ -154,10 +154,3 @@ http://localhost:3000
 >Backend API development with FastAPI
 
 
-
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 0f19d629c1f481cfcc04ea92b40f1f9cf7ba9962
