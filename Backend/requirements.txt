@@ -1,12 +1,9 @@
 fastapi
-pydantic
-langchain-community
+uvicorn
 langchain
-langchain-core
+langchain-community
 langchain-huggingface
 faiss-cpu
 transformers
 sentence-transformers
-torch
 pypdf
-
