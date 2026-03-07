@@ -4,6 +4,8 @@
 
 An end-to-end Retrieval-Augmented Generation (RAG) chatbot that processes PDF documents and generates context-aware answers using semantic search and a local HuggingFace LLM.
 
+---
+
 ## 👨‍💻 About the Project
 
 This project demonstrates a complete implementation of a RAG pipeline, integrating:
@@ -17,6 +19,8 @@ This project demonstrates a complete implementation of a RAG pipeline, integrati
 >Large Language Model (LLM) inference
 
 The chatbot answers user queries strictly based on the uploaded PDF content, reducing hallucination and improving factual accuracy.
+
+---
 
 ## 🚀 Key Features
 
@@ -36,6 +40,8 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 
 💻 Simple frontend interface
 
+---
+
 ## 🧠 System Architecture
 
 >User Query
@@ -50,6 +56,8 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 
 >Final Generated Answer
 
+---
+
 ## 🛠 Tech Stack
 
 >Python
@@ -63,6 +71,8 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 >Sentence Transformers
 
 >HuggingFace Transformers
+
+---
 
 ## 🤖 Models Used
 
@@ -97,6 +107,8 @@ The chatbot answers user queries strictly based on the uploaded PDF content, red
 >Suitable for CPU-based inference
 
 >Good instruction-following capability
+
+---
 
 ## ⚙️ Installation & Setup
 
@@ -141,6 +153,8 @@ Open in browser:
 
 http://localhost:3000
 
+---
+
 ## 📌 Learning Outcomes
 
 >Through this project, I gained hands-on experience in:
@@ -154,4 +168,5 @@ http://localhost:3000
 >Integrating HuggingFace LLMs
 
 >Backend API development with FastAPI
+
 
