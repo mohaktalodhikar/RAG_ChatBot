@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # **📘 RAG Chatbot using FAISS & HuggingFace**
 
 An end-to-end Retrieval-Augmented Generation (RAG) chatbot that processes PDF documents and generates context-aware answers using semantic search and a local HuggingFace LLM.
@@ -152,3 +154,4 @@ http://localhost:3000
 >Integrating HuggingFace LLMs
 
 >Backend API development with FastAPI
+
