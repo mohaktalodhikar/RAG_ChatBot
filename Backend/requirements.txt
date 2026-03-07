@@ -1,9 +1,15 @@
 fastapi
 uvicorn
-langchain
+pydantic
 langchain-community
+langchain
+langchain-core
 langchain-huggingface
 faiss-cpu
 transformers
 sentence-transformers
+torch
 pypdf
+python-multipart
+
+
