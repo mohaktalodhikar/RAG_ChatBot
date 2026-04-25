@@ -252,8 +252,50 @@ class AIAssistant {
     }
 
     attachFile() {
-        // Placeholder for file attachment functionality
-        this.showToast('File attachment coming soon!', 'info');
+        document.getElementById('fileInput').click();
+    }
+
+    async handleFileUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        if (file.type !== 'application/pdf') {
+            this.showToast('Please upload a PDF file', 'error');
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        this.setProcessingState(true);
+        this.showToast('Uploading and processing PDF...', 'info');
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.detail || 'Upload failed');
+            }
+
+            const data = await response.json();
+            this.showToast(data.message || 'PDF processed successfully!', 'success');
+            
+            // Add a system message to the chat
+            this.addMessage(`System: Uploaded "${file.name}" successfully. You can now ask questions about it.`, 'assistant');
+            this.hideWelcomeScreen();
+            
+        } catch (error) {
+            console.error('Error:', error);
+            this.showToast(error.message || 'Error uploading file', 'error');
+        } finally {
+            this.setProcessingState(false);
+            // Reset input
+            event.target.value = '';
+        }
     }
 
     saveToHistory(question, answer) {
@@ -331,6 +373,12 @@ function setQuestion(question) {
 function attachFile() {
     if (window.aiAssistant) {
         window.aiAssistant.attachFile();
+    }
+}
+
+function handleFileUpload(event) {
+    if (window.aiAssistant) {
+        window.aiAssistant.handleFileUpload(event);
     }
 }
 

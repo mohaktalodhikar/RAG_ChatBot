@@ -103,6 +103,7 @@
                             oninput="autoResize(this)"
                         ></textarea>
                         <div class="input-actions">
+                            <input type="file" id="fileInput" accept=".pdf" style="display: none;" onchange="handleFileUpload(event)">
                             <button class="btn-icon" onclick="attachFile()" title="Attach File">
                                 <i class="fas fa-paperclip"></i>
                             </button>
