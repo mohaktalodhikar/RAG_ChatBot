@@ -140,7 +140,7 @@ uvicorn app:app --reload
 
 Backend runs at:
 
-http://127.0.0.1:8000/docs
+http://127.0.0.1:8000
 
 4️⃣ Run Frontend
 
